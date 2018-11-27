@@ -22,6 +22,7 @@ export interface Options {
   testNamePattern?: string;
   testFileNamePattern?: string;
   shell?: boolean;
+  useWsl?: boolean;
 }
 
 export class Runner extends EventEmitter {
@@ -51,6 +52,7 @@ export class ProjectWorkspace {
     localJestMajorVersin: number,
     collectCoverage?: boolean,
     debug?: boolean,
+    useWsl?: boolean | string,
   );
   pathToJest: string;
   pathToConfig: string;
@@ -58,6 +60,7 @@ export class ProjectWorkspace {
   localJestMajorVersion: number;
   collectCoverage?: boolean;
   debug?: boolean;
+  useWsl?: boolean | string;
 }
 
 export interface IParseResults {

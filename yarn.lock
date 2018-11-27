@@ -4414,6 +4414,11 @@ ws@^5.2.0:
   dependencies:
     async-limiter "~1.0.0"
 
+wsl-path@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/wsl-path/-/wsl-path-1.1.0.tgz#e2275a376b25d817d4f58961f0412cfde55a93fa"
+  integrity sha512-+BSk4znlhB1Gr8ENwKUut6bb1MXBPYjE5zaKpVL2TRTU7BaOIQbGVKc4Yr34b7OcLtB/Kx0e9VLf1MDp6vRxKA==
+
 xml-name-validator@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/xml-name-validator/-/xml-name-validator-3.0.0.tgz#6ae73e06de4d8c6e47f9fb181f78d648ad457c6a"

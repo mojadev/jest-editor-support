@@ -58,7 +58,6 @@ export default class Settings extends EventEmitter {
     };
 
     const {testMatch, testRegex} = jestConfigDefaults;
-
     this.settings = {testMatch, testRegex};
 
     this.configs = [this.settings];
