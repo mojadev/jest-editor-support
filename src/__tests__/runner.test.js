@@ -13,7 +13,7 @@ jest.mock('../Process');
 jest.mock('child_process', () => ({spawn: jest.fn()}));
 jest.mock('../readTestResults', () => ({readTestResults: x => JSON.parse(x)}));
 
-jest.mock('os', () => ({tmpdir: jest.fn()}));
+jest.mock('os', () => ({tmpdir: () => "tmpdir"}));
 jest.mock('fs', () => {
   // $FlowFixMe requireActual
   const readFileSync = jest.requireActual('fs').readFileSync;
@@ -58,8 +58,6 @@ describe('Runner', () => {
     });
 
     it('sets the output filepath', () => {
-      tmpdir.mockReturnValueOnce('tmpdir');
-
       const workspace: any = {};
       const sut = new Runner(workspace);
 
